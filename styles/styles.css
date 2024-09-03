@@ -1,0 +1,128 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: inline;
+}
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    color: #0a1b32;
+    margin-top: 37px;
+    margin-left: 80px;
+    float: left;
+    display: inline-block;
+}
+.logo-dot {
+    color: #33a2e0;
+}
+
+a{
+    text-decoration: none;
+}
+a:link {
+    color: #1b0a42;
+}
+.nav {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 48px;
+    margin-left: 98px;
+    display: inline-block;
+}
+#about, #contact{
+    margin-left: 38px;
+}
+#blog {
+    margin-left: 40px;
+}
+
+.login {
+    float: right;
+    display: inline-block;
+}
+.sign-in {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 48px;
+}
+.sign-up-btn {
+    border-radius: 6px;
+    border-color: #33a2e0;
+    border-style: solid;
+    width: 120px;
+    height: 59px;
+    background: #33a2e0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 68px;
+}
+
+.content-text {
+    float: left;
+    display: inline-block;
+}
+h1 {
+    font-family: "Ramaraja", serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 106%;
+    letter-spacing: 0.02em;
+    color: #1b0a42;
+    margin-left: 200px;
+    margin-top: 209px;
+    max-width: 495px;
+    width: 100%;
+}
+.main-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #9a9a9a;
+    margin-left: 191px;
+    margin-top: 11px;
+    max-width: 583px;
+    width: 100%;
+}
+.learn-more-btn {
+    border-radius: 6px;
+    border-color: #33a2e0;
+    border-style: solid;
+    width: 152px;
+    height: 63px;
+    background: #33a2e0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-left: 200px;
+    margin-bottom: 267px;
+}
+
+#meditation {
+    margin-right: 45px;
+    margin-bottom: 156px;
+    display: inline-block;
+    float: right;
+    max-width: 796px;
+    width: 100%;
+}
