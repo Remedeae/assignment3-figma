@@ -1,0 +1,33 @@
+@import 'reset';
+@import 'variables';
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: $color-dark;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: $body-width;
+    height: 100%;
+    padding: 3%;
+}
+button {
+    border-radius: 6px;
+    border-color: $color-accent;
+    border-style: solid;
+    background: $color-accent;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+@import 'header';
+@import 'main-content';
+@import 'resize-changes';

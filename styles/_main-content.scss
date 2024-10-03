@@ -1,0 +1,49 @@
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+    max-width: 2000px;
+    width: 100%;
+    min-height: 543px;
+}
+
+.main-content section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 583px;
+    width: 100%;
+    min-height: 372px;
+}
+h1 {
+    font-family: "Ramaraja", serif;
+    font-size: 72px;
+    line-height: 106%;
+    color: $color-dark;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+.main-text {
+    font-size: 20px;
+    line-height: 160%;
+    color: #9a9a9a;
+    max-width: 540px;
+    width: 100%;
+    height: auto;
+}
+.learn-more-btn {
+    align-self: center;
+    width: 152px;
+    height: 63px;
+    line-height: 200%;
+
+}
+#meditation {  
+    max-width: 796px;
+    width: 100%;
+    height: auto;  
+}

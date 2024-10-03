@@ -1,0 +1,13 @@
+@media screen and (max-width: 1566px){
+    .main-content section {
+        align-items: center;
+    }
+    h1 {
+        margin-bottom: 10px;
+    } 
+}
+@media screen and (max-width: 600px) {
+    .nav {
+        display: block;
+    }    
+}

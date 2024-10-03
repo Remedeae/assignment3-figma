@@ -1,0 +1,48 @@
+header {
+    width: $body-width;
+    height: auto;
+}
+header > section {
+    width: 300px;
+    width: 100%;
+    height: auto;
+}
+header, header > section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: "Figtree", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 160%;
+}
+.logo-dot {
+    color: $color-accent;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    letter-spacing: 0;
+}
+.nav {
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    width: 100%;
+    min-height: 22px;
+}
+.sign-in {
+    padding-right: 10px;
+
+}
+.sign-up-btn {
+    width: 120px;
+    height: 59px;
+}
