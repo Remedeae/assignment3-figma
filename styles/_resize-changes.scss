@@ -14,9 +14,11 @@
     } 
 }
 @media screen and (max-width: 700px) {
-    .nav {
-        display: block;
-    }   
+    ul li:not(:first-child) {display: none;}
+    ul li.nav-icon {
+      float: right;
+      display: block;
+    } 
     h1 {
         font-size: 50px;
     }
@@ -24,3 +26,16 @@
         font-size: 14px;
     } 
 }
+@media screen and (max-width: 700px) {
+    ul.responsive {position: relative;}
+    ul.responsive .nav-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    ul.responsive li {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

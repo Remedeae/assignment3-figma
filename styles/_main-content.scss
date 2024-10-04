@@ -37,10 +37,11 @@ h1 {
 }
 .learn-more-btn {
     align-self: center;
-    width: 152px;
-    height: 63px;
-    line-height: 200%;
-
+    & button {
+        width: 152px;
+        height: 63px;
+        line-height: 200%;
+    }
 }
 #meditation {  
     max-width: 796px;

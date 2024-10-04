@@ -1,16 +1,9 @@
 header {
-    width: 100%;
-    height: auto;
-}
-header section {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-}
-header, header section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: auto;
 }
 .logo {
     font-family: "Figtree", sans-serif;
@@ -29,6 +22,9 @@ li {
 a{
     text-decoration: none;
     letter-spacing: 0;
+}
+a:hover {
+    color: $color-accent;
 }
 ul {
     display: grid;
@@ -55,20 +51,12 @@ ul {
 #sign-up-btn {
     grid-area: 1 / 7 / 2 / 8;
 }
-#sign-in {
-    width: 70px;
-}
 #sign-up-btn {
     justify-self: end;
 }
 #sign-up-btn button {
     width: 120px;
     height: 59px;
-}
-button a {
-    color: white;
-    font-weight: 700;
-    text-align: center;
 }
 
 ul li:last-child * {

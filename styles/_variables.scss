@@ -1,4 +1,14 @@
+$color-light: #d2eaf9;
 $color-accent: #33a2e0;
 $color-dark: #1b0a42;
 
 $body-width: 94%;
+
+%button {
+    border-radius: 6px;
+    border-color: $color-accent;
+    border-style: solid;
+    background: $color-accent;
+    color: white;
+    font-weight: 700;
+}

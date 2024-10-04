@@ -16,14 +16,17 @@ body {
     padding: 3%;
 }
 button {
-    border-radius: 6px;
-    border-color: $color-accent;
-    border-style: solid;
-    background: $color-accent;
-    color: #fff;
-    font-weight: 700;
-    text-align: center;
+    @extend %button;
+    &:hover {
+        background-color: $color-light;
+        color: $color-dark;
+        cursor: pointer
+    }
 }
+a:hover {
+    color: $color-accent;
+}
+
 
 @import 'header';
 @import 'main-content';

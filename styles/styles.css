@@ -55,6 +55,15 @@ body, html {
   scroll-behavior: smooth;
 }
 
+button {
+  border-radius: 6px;
+  border-color: #33a2e0;
+  border-style: solid;
+  background: #33a2e0;
+  color: white;
+  font-weight: 700;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -71,28 +80,17 @@ body {
   padding: 3%;
 }
 
-button {
-  border-radius: 6px;
-  border-color: #33a2e0;
-  border-style: solid;
-  background: #33a2e0;
-  color: #fff;
-  font-weight: 700;
-  text-align: center;
+button:hover {
+  background-color: #d2eaf9;
+  color: #1b0a42;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #33a2e0;
 }
 
 header {
-  width: 100%;
-  height: auto;
-}
-
-header section {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-}
-
-header, header section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +100,8 @@ header, header section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -124,6 +124,10 @@ li {
 a {
   text-decoration: none;
   letter-spacing: 0;
+}
+
+a:hover {
+  color: #33a2e0;
 }
 
 ul {
@@ -187,10 +191,6 @@ ul {
   grid-area: 1/7/2/8;
 }
 
-#sign-in {
-  width: 70px;
-}
-
 #sign-up-btn {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -199,12 +199,6 @@ ul {
 #sign-up-btn button {
   width: 120px;
   height: 59px;
-}
-
-button a {
-  color: white;
-  font-weight: 700;
-  text-align: center;
 }
 
 ul li:last-child * {
@@ -269,6 +263,8 @@ h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+.learn-more-btn button {
   width: 152px;
   height: 63px;
   line-height: 200%;
@@ -298,7 +294,11 @@ h1 {
   }
 }
 @media screen and (max-width: 700px) {
-  .nav {
+  ul li:not(:first-child) {
+    display: none;
+  }
+  ul li.nav-icon {
+    float: right;
     display: block;
   }
   h1 {
@@ -306,5 +306,20 @@ h1 {
   }
   p {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 700px) {
+  ul.responsive {
+    position: relative;
+  }
+  ul.responsive .nav-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }

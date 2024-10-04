@@ -12,42 +12,43 @@
 </head>
 <body>
     <header>
-        <section>
-            <h2 class="logo">Medi<span class="logo-dot">.</span></h2>
-            <ul class="nav" id="nav__bar">
-                <li id="home"><a href="#">Home</a></li>
-                <li id="about"><a href="#">About</a></li>
-                <li id="blog"><a href="#">Blog</a></li>
-                <li id="contact"><a href="#">Contact</a></li>
-                <li id="sign-in"><a href="#">Sign In</a></li>
-                <li id="sign-up-btn">
-                    <button >
-                        <a href="#">Sign Up</a>
-                    </button>
-                </li>
-                <li class="nav-icon" onclick="mobileMenu()"><a>
-                    <i class="fa-solid fa-bars"></i>
-                </a></li>
-            </ul>                
-        </section>
+        <h2 class="logo">Medi<span class="logo-dot">.</span></h2>
+        <ul class="nav" id="nav__bar">
+            <li id="home"><a href="#">Home</a></li>
+            <li id="about"><a href="#">About</a></li>
+            <li id="blog"><a href="#">Blog</a></li>
+            <li id="contact"><a href="#">Contact</a></li>
+            <li id="sign-in"><a href="#">Sign In</a></li>
+            <li id="sign-up-btn">
+                <a href="#">
+                    <button>Learn More</button>
+                </a>
+            </li>
+            <li class="nav-icon" onclick="mobileMenu()"><a>
+                <i class="fa-solid fa-bars"></i>
+            </a></li>
+        </ul>                
     </header>
     <div class="main-content">
         <section>
             <h1>Stay Productive & Work Remotely</h1>
             <p class="main-text">The key to work-from-home success is to create an 
-                enviroment that allows you to focus on the tasks at hand. Whether you are working from home for the first time.</p>
-            <button class="learn-more-btn">Learn More</button>
+                enviroment that allows you to focus on the tasks at hand. Whether you are working from home for the first time.
+            </p>
+            <a class="learn-more-btn" href="#">
+                <button>Learn More</button>
+            </a>
         </section>
         <img id="meditation" src="Images/Frame.png" alt="Woman Meditating">
     </div>
 
     <script>
         function mobileMenu() {
-  let x = document.getElementById("nav__bar");
-  if (x.className === "nav") {
-    x.className += " responsive";
+  let navigation = document.getElementById("nav__bar");
+  if (navigation.className === "nav") {
+    navigation.className += " responsive";
   } else {
-    x.className = "nav";
+    navigation.className = "nav";
   }
 }
     </script>
