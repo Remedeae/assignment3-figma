@@ -1,13 +1,13 @@
 header {
-    width: $body-width;
-    height: auto;
-}
-header > section {
-    width: 300px;
     width: 100%;
     height: auto;
 }
-header, header > section {
+header section {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+header, header section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +19,8 @@ header, header > section {
     line-height: 160%;
 }
 .logo-dot {
+    font-weight: 900;
+    font-size: 30px;
     color: $color-accent;
 }
 li {
@@ -28,21 +30,47 @@ a{
     text-decoration: none;
     letter-spacing: 0;
 }
-.nav {
-    text-align: center;
-}
 ul {
-    display: flex;
-    justify-content: space-around;
-    max-width: 500px;
-    width: 100%;
-    min-height: 22px;
+    display: grid;
+    align-items: center;
+    grid-template: 60px / 70px 70px 60px 60px 1fr 70px 120px; 
+    width: 85vw;
+    padding-left: 20px;
 }
-.sign-in {
-    padding-right: 10px;
-
+#home{
+    grid-area: 1 / 1 / 2 /2;
 }
-.sign-up-btn {
+#about {
+    grid-area: 1 / 2 / 2 /3;
+}
+#blog {
+    grid-area: 1 / 3 / 2 /4;
+}
+#contact {
+    grid-area: 1 / 4 / 2 /5;
+}
+#sign-in {
+    grid-area: 1 / 6 / 2 / 7;
+}
+#sign-up-btn {
+    grid-area: 1 / 7 / 2 / 8;
+}
+#sign-in {
+    width: 70px;
+}
+#sign-up-btn {
+    justify-self: end;
+}
+#sign-up-btn button {
     width: 120px;
     height: 59px;
+}
+button a {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+ul li:last-child * {
+    display: none;
 }

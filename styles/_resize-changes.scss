@@ -2,12 +2,25 @@
     .main-content section {
         align-items: center;
     }
+    .main-content * {
+        text-align: center;
+    }
     h1 {
+        margin-top: 50px;
         margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 20px;
     } 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .nav {
         display: block;
-    }    
+    }   
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 14px;
+    } 
 }

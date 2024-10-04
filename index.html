@@ -7,26 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@900&family=Ramaraja&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b69314bf3.js" crossorigin="anonymous"></script>
     <title>Assignment Lesson 4</title>
 </head>
 <body>
     <header>
         <section>
             <h2 class="logo">Medi<span class="logo-dot">.</span></h2>
-            <nav class="nav">
-                <ul>
-                    <li><a id="home" href="#">Home</a></li>
-                    <li><a id="about" href="#">About</a></li>
-                    <li><a id="blog" href="#">Blog</a></li>
-                    <li><a id="contact" href="#">Contact</a></li>
-                </ul>                
-            </nav>
+            <ul class="nav" id="nav__bar">
+                <li id="home"><a href="#">Home</a></li>
+                <li id="about"><a href="#">About</a></li>
+                <li id="blog"><a href="#">Blog</a></li>
+                <li id="contact"><a href="#">Contact</a></li>
+                <li id="sign-in"><a href="#">Sign In</a></li>
+                <li id="sign-up-btn">
+                    <button >
+                        <a href="#">Sign Up</a>
+                    </button>
+                </li>
+                <li class="nav-icon" onclick="mobileMenu()"><a>
+                    <i class="fa-solid fa-bars"></i>
+                </a></li>
+            </ul>                
         </section>
-        <div class="login">
-            <a class="sign-in" href="#">Sign In</a>
-            <button class="sign-up-btn">Sign Up</button>
-        </div>
-
     </header>
     <div class="main-content">
         <section>
@@ -37,5 +40,16 @@
         </section>
         <img id="meditation" src="Images/Frame.png" alt="Woman Meditating">
     </div>
+
+    <script>
+        function mobileMenu() {
+  let x = document.getElementById("nav__bar");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+    </script>
 </body>
 </html>

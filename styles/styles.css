@@ -65,18 +65,7 @@ body, html {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 auto;
   width: 94%;
   height: 100%;
   padding: 3%;
@@ -93,17 +82,17 @@ button {
 }
 
 header {
-  width: 94%;
-  height: auto;
-}
-
-header > section {
-  width: 300px;
   width: 100%;
   height: auto;
 }
 
-header, header > section {
+header section {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+header, header section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,6 +112,8 @@ header, header > section {
 }
 
 .logo-dot {
+  font-weight: 900;
+  font-size: 30px;
   color: #33a2e0;
 }
 
@@ -135,28 +126,89 @@ a {
   letter-spacing: 0;
 }
 
-.nav {
+ul {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: 60px;
+  -ms-grid-columns: 70px 70px 60px 60px 1fr 70px 120px;
+      grid-template: 60px/70px 70px 60px 60px 1fr 70px 120px;
+  width: 85vw;
+  padding-left: 20px;
+}
+
+#home {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+}
+
+#about {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+}
+
+#blog {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1/3/2/4;
+}
+
+#contact {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1/4/2/5;
+}
+
+#sign-in {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-area: 1/6/2/7;
+}
+
+#sign-up-btn {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-area: 1/7/2/8;
+}
+
+#sign-in {
+  width: 70px;
+}
+
+#sign-up-btn {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#sign-up-btn button {
+  width: 120px;
+  height: 59px;
+}
+
+button a {
+  color: white;
+  font-weight: 700;
   text-align: center;
 }
 
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  max-width: 500px;
-  width: 100%;
-  min-height: 22px;
-}
-
-.sign-in {
-  padding-right: 10px;
-}
-
-.sign-up-btn {
-  width: 120px;
-  height: 59px;
+ul li:last-child * {
+  display: none;
 }
 
 .main-content {
@@ -234,12 +286,25 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
   }
+  .main-content * {
+    text-align: center;
+  }
   h1 {
+    margin-top: 50px;
     margin-bottom: 10px;
   }
+  p {
+    margin-bottom: 20px;
+  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .nav {
     display: block;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 14px;
   }
 }
